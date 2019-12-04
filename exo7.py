@@ -1,6 +1,18 @@
 def cascadeIsGreater(list, number):
     # Début de ton code
-    pass
+    list2= []
+    for x in list:
+        if isinstance(number, int):  
+            if x < number :
+                list2.append(False)
+            elif x > number:
+                list2.append(True)   
+            else :
+                list2.append(None)
+        else:
+            raise Exception("Ce n'est pas un nombre")        
+    return list2         
+   
     # Fin de ton code
 
 
