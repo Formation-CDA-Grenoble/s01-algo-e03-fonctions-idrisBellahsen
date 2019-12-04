@@ -2,8 +2,7 @@ def cascadeDouble(list):
     # Début de ton code
     
     if isinstance(list,int):    
-        return list*2
-    
+        return list*2  
     list2= []
     for number in list :
         if isinstance(number, int):
