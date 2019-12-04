@@ -20,4 +20,3 @@ tests = (
 for test in tests:
     print(f"L'appel  double({test[0]})  renvoie: {double(test[0])} (résultat attendu: {test[1]})")
 
-print(double("a"))

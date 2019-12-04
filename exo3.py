@@ -1,6 +1,12 @@
 def isEqual(number1, number2):
     # Début de ton code
-    pass
+    if isinstance(number1, int) and isinstance(number2, int):
+        if number1==number2:
+            return True
+        else:
+            return False
+    else:
+       raise Exception("Ce n'est pas un nombre")
     # Fin de ton code
 
 
