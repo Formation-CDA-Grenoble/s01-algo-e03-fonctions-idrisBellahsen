@@ -1,6 +1,10 @@
 def double(number):
     # Début de ton code
-    return number*2
+    if isinstance(number, int):
+        return number*2
+    else:
+       raise Exception("Ce n'est pas un nombre")
+
     # Fin de ton code
 
 
@@ -15,3 +19,5 @@ tests = (
 
 for test in tests:
     print(f"L'appel  double({test[0]})  renvoie: {double(test[0])} (résultat attendu: {test[1]})")
+
+print(double("a"))
