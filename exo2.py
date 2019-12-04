@@ -1,6 +1,14 @@
 def conditionalDouble(number):
     # Début de ton code
-    pass
+      # Début de ton code
+    if isinstance(number, int):
+        if(number>0):
+            return number*2
+        else:
+            return number
+    else:
+       raise Exception("Ce n'est pas un nombre")
+
     # Fin de ton code
 
 
@@ -15,3 +23,4 @@ tests = (
 
 for test in tests:
     print(f"L'appel  conditionalDouble({test[0]})  renvoie: {conditionalDouble(test[0])} (résultat attendu: {test[1]})")
+print(conditionalDouble("a"))
