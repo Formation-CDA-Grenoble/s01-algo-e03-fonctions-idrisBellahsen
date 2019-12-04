@@ -1,6 +1,12 @@
 def reducer(list):
     # Début de ton code
-    pass
+    result=0
+    for number in list:
+        if isinstance(number, int): 
+            result=result+number
+        else:
+            raise Exception("Ce n'est pas un nombre")    
+    return result
     # Fin de ton code
 
 
